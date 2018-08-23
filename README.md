@@ -38,7 +38,7 @@ import matplotlib.pyplot as plt
 # Load the data from temp.csv as a new pandas 'Series' , print header and check the index
 temp = Series.from_csv('temp.csv', header=0)
 print(temp.head())
-print (temp.index)
+print(temp.index)
 ```
 
     Date
@@ -66,7 +66,7 @@ Let's use the simple `Series.plot()` function to draw the line graph from `temp`
 
 
 ```python
-# Draw a line plot using CO2_final and .plot() function. 
+# Draw a line plot using temp and .plot() function. 
 temp.plot(figsize = (20,6))
 plt.show()
 ```
@@ -229,7 +229,7 @@ We can also plot distribution across months within each year. Perform following 
 yr_1990 = temp['1990']
 groups_monthly = yr_1990.groupby(pd.Grouper(freq ='M'))
 
-# Add each month to dataFraqme as a column
+# Add each month to dataFrame as a column
 months_1990 = pd.concat([pd.DataFrame(x[1].values) for x in groups_monthly], axis=1)
 months_df = pd.DataFrame(months_1990)
 
