@@ -64,7 +64,7 @@ Let's use the simple `Series.plot()` function to draw the line graph from `temp`
 
 
 ```python
-# Draw a line plot using CO2_final and .plot() function. 
+# Draw a line plot using temp and .plot() function. 
 
 ```
 
@@ -190,7 +190,7 @@ We can also plot distribution across months within each year. Perform following 
 yr_1990 = None
 groups_monthly = None
 
-# Add each month to dataFraqme as a column
+# Add each month to dataFrame as a column
 months_1990 = None
 months_df = None
 
